@@ -1,0 +1,139 @@
+@font-face
+{
+    font-family: "Lkdown";
+    src: url("fonts/lkdown.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+@font-face
+{
+    font-family: "Aronder";
+    src: url("fonts/Aronder.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+@font-face
+{
+    font-family: "fkabductionkz";
+    src: url("fonts/fkabductionkz.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+@font-face
+{
+    font-family: "Kazmann Sans";
+    src: url("fonts/Kazmann Sans.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+@font-face
+{
+    font-family: "bauhaus";
+    src: url("fonts/bauhaus.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Lkdown";
+    background: rgb(11, 16, 39); 
+    color: white; 
+}
+.header p {
+    font-family: "Aronder";
+    font-size: 25px;
+}
+
+.navbar {
+    overflow: hidden; 
+    background-color: rgb(30, 41, 90); 
+    font-family: "fkabductionkz";
+}
+.navbar a {
+    float:left; 
+    display: block; 
+    color: white; 
+    text-align: center;
+    padding: 15px 20px; 
+    text-decoration: none;
+    font-size: 25px;
+    flex-direction: column;
+    opacity: 0.75;
+    transition: 0.25s;
+    margin-left: 15px;
+}
+.navbar a.active {
+    opacity: 1;
+    background-color: white;
+    color: black;
+}
+.navbar a:hover {
+    opacity: 1;
+    background-color: white; 
+    color: black; 
+}
+
+.bg {
+    background-image: url(images/bg2.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;   
+}
+.descr {  
+    flex: 70%;
+    background-color: rgba(0, 0, 0, 0.315);
+    padding: 40px; 
+    color: white;
+    font-family: "";
+
+}
+.descr h2 {
+    font-family: "Lkdown";
+    font-size: 29px;
+
+}
+.descr h3 {
+    font-family: "fkabductionkz";
+    font-size: 23px;
+}
+.descr p {
+    font-family: "bauhaus";
+    font-size: 20px;
+}
+.pic {
+    text-align: center;
+}
+hr {
+    border: none; 
+    background-color: white; 
+    color: white; 
+    height: 4px; 
+}
+
+.underbar {
+    padding: 20px;
+    text-align: center;
+    background: black;
+    color: rgb(129, 129, 129);
+    font-size: 15px;
+    font-family: "Kazmann Sans";
+}
+@media screen and (max-width: 450px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+        margin-left: 0px;
+    }
+}
