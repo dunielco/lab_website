@@ -1,12 +1,5 @@
 @font-face
 {
-    font-family: "Lkdown";
-    src: url("fonts/lkdown.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal;
-}
-@font-face
-{
     font-family: "Aronder";
     src: url("fonts/Aronder.otf") format("truetype"); 
     font-style: normal; 
@@ -28,12 +21,18 @@
 }
 @font-face
 {
-    font-family: "bauhaus";
-    src: url("fonts/bauhaus.ttf") format("truetype"); 
+    font-family: "tenoture";
+    src: url("fonts/tenoture.ttf") format("truetype"); 
     font-style: normal; 
     font-weight: normal;
 }
-
+@font-face
+{
+    font-family: "vcrosdmonorusbydaymarius";
+    src: url("fonts/vcrosdmonorusbydaymarius.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
 * {
     box-sizing: border-box;
 }
@@ -45,8 +44,8 @@ body {
 .header {
     padding: 10px;
     text-align: center;
-    font-size: 25px;
-    font-family: "Lkdown";
+    font-size: 23px;
+    font-family: "tenoture";
     background: rgb(11, 16, 39); 
     color: white; 
 }
@@ -85,7 +84,7 @@ body {
 }
 
 .bg {
-    background-image: url(images/bg2.jfif);
+    background-image: url(images/bg1.jfif);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -96,23 +95,30 @@ body {
     background-color: rgba(0, 0, 0, 0.315);
     padding: 40px; 
     color: white;
-    font-family: "";
-
 }
 .descr h2 {
-    font-family: "Lkdown";
+    font-family: "fkabductionkz";
     font-size: 29px;
 
 }
 .descr h3 {
     font-family: "fkabductionkz";
-    font-size: 23px;
+    font-size: 23px; 
+}
+.descr a {
+    overflow: hidden;
+    display: block;  
+    color: white;    
+    text-decoration: none;
 }
 .descr p {
-    font-family: "bauhaus";
+    font-family: "vcrosdmonorusbydaymarius";
     font-size: 20px;
 }
 .pic {
+    text-align: center;
+}
+.podpis {
     text-align: center;
 }
 hr {
@@ -135,5 +141,12 @@ hr {
         float: none;
         width: 100%;
         margin-left: 0px;
+    }
+    .header {
+        font-size: 15px;
+    }
+    .header p {
+        font-family: "Aronder";
+        font-size: 23px;
     }
 }
