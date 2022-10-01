@@ -1,0 +1,169 @@
+/*Подключение шрифтов*/
+@font-face
+{
+    font-family: "Aronder";
+    src: url("../fonts/Aronder.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+@font-face
+{
+    font-family: "fkabductionkz";
+    src: url("../fonts/fkabductionkz.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+@font-face
+{
+    font-family: "Kazmann Sans";
+    src: url("../fonts/Kazmann Sans.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+@font-face
+{
+    font-family: "tenoture";
+    src: url("../fonts/tenoture.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+@font-face
+{
+    font-family: "vcrosdmonorusbydaymarius";
+    src: url("../fonts/vcrosdmonorusbydaymarius.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+/*Настройка заголовка*/
+.header {
+    padding: 10px; /*Размер подложки*/
+    text-align: center; /*Расположение текста*/
+    font-size: 23px; /*Размер шрифта*/
+    font-family: "tenoture"; /*Выбор шрифта*/
+    background: rgb(11, 16, 39); /*Задание цвета фона*/
+    color: white; /*Задание цвета текста*/
+}
+/*Настройка параграфа*/
+.header p {
+    font-family: "Aronder"; /*Выбор шрифта*/
+    font-size: 25px; /*Размер шрифта*/
+}
+
+/*Настройка навигационной панели*/
+.navbar {
+    overflow: hidden; 
+    background-color: rgb(30, 41, 90); 
+    font-family: "fkabductionkz";
+}
+/*Настройка ссылки в навигационной панели*/
+.navbar a {
+    float:left; /*Расположение*/
+    display: block; 
+    color: white; 
+    text-align: center;
+    padding: 15px 20px; 
+    text-decoration: none; /*Отключение подчёркивания*/
+    font-size: 25px;
+    flex-direction: column;
+    opacity: 0.75; 
+    transition: 0.25s; /*Переход при наведении*/
+    margin-left: 15px;
+}
+/*Настройка текущей ссылки*/
+.navbar a.active {
+    opacity: 1;
+    background-color: white;
+    color: black;
+}
+/*Настройка ссылки при наведении*/
+.navbar a:hover {
+    opacity: 1;
+    background-color: white; 
+    color: black; 
+}
+
+/*Настройка фоновой картинки*/
+.bg {
+    background-image: url(../images/bg1.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;   
+}
+/*Настройка основного текста*/
+.descr {  
+    flex: 70%;
+    background-color: rgba(0, 0, 0, 0.315);
+    padding: 40px; 
+    color: white;
+}
+.descr h2 {
+    font-family: "fkabductionkz";
+    font-size: 29px;
+
+}
+.descr h3 {
+    font-family: "fkabductionkz";
+    font-size: 23px; 
+}
+/*Настройка ссылкок в основном тексте*/
+.descr a {
+    overflow: hidden;
+    display: block;  
+    color: white;    
+    text-decoration: underline;
+}
+.descr p {
+    font-family: "vcrosdmonorusbydaymarius";
+    font-size: 20px;
+}
+/*Настройка картинок и подписи к ним*/
+.pic {
+    text-align: center;
+}
+.podpis {
+    text-align: center;
+}
+/*Настройка разделительной полосы*/
+hr {
+    border: none; 
+    background-color: white; 
+    color: white; 
+    height: 4px; 
+}
+
+/*Настройка нижней части*/
+.underbar {
+    padding: 20px;
+    text-align: center;
+    background: black;
+    color: rgb(129, 129, 129);
+    font-size: 15px;
+    font-family: "Kazmann Sans";
+}
+/*Настройка ссылки в нижней части*/
+.underbar a {
+    color: rgb(156, 156, 156);
+}
+/*Настройка сайта для просмотра на телефоне*/
+@media screen and (max-width: 450px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+        margin-left: 0px;
+    }
+    .header {
+        font-size: 15px;
+    }
+    .header p {
+        font-family: "Aronder";
+        font-size: 23px;
+    }
+}
